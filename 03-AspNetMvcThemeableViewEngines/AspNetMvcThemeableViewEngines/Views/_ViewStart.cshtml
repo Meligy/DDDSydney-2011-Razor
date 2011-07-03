@@ -1,0 +1,7 @@
+﻿@{
+    var theme = Session["theme"] as string ?? string.Empty;
+
+    Layout = string.IsNullOrEmpty(theme) ?
+             "~/Views/Shared/_Layout.cshtml" :
+             string.Format("~/Views/Themes/{0}/Shared/_Layout.cshtml", theme);
+}

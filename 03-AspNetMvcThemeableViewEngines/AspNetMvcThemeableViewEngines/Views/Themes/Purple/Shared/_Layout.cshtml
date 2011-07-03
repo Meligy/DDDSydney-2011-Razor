@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #57007f;
+        }
+
+        ul#menu {
+            border-bottom:1px solid #57007f;
+        }
+
+        ul#menu li a {
+            background-color: #b200ff;
+            color: #57005c;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>My MVC Application</h1>
+            </div>
+            <div id="themeSwitcher">
+                @Html.Action("Index", "ThemeSwitcher")
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            @RenderBody()
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
