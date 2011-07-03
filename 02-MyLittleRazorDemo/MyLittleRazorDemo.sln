@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLittleRazorDemo", "MyLittleRazorDemo\MyLittleRazorDemo.csproj", "{C409C2D5-0456-4BE2-9B7C-73FB7534DBDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C409C2D5-0456-4BE2-9B7C-73FB7534DBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C409C2D5-0456-4BE2-9B7C-73FB7534DBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C409C2D5-0456-4BE2-9B7C-73FB7534DBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C409C2D5-0456-4BE2-9B7C-73FB7534DBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

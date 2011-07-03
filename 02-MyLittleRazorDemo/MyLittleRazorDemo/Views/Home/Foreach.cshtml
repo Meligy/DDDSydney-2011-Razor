@@ -1,0 +1,18 @@
+﻿@model IEnumerable<string>
+@section right_bar{}
+@{
+    ViewBag.Title =
+        "The history is a series of repeated loops";
+}
+
+<header>
+    This is what my son @@AdamMeligy can count so far...
+</header>
+
+<ol style="list-style-type: circle">
+
+@Model.Each(
+    @<li> @item.Index, @item.Value</li>
+)
+
+</ol>

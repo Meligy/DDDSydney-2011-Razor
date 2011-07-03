@@ -1,0 +1,12 @@
+﻿@functions {
+
+    public static bool TryLoadSection(WebPageBase page, string sectionName)
+    {
+        var hasSection = page.IsSectionDefined(sectionName);
+
+        page.RenderSection(sectionName, required: false);
+
+        return hasSection;
+    }    
+
+}

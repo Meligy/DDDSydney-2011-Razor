@@ -1,0 +1,19 @@
+﻿@using Microsoft.Web.Helpers
+@using MyLittleRazorDemo
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section right_bar
+{
+    <p>
+        Learn about which helpers are available:<br />
+        <a href="http://bit.ly/aspnet-helpers">http://bit.ly/aspnet-helpers</a>
+    </p>
+    @Twitter.Search("DDDSydney")
+}
+
+<h2>@ViewBag.Message</h2>
+<h3>
+    One little demo at a time...
+</h3>

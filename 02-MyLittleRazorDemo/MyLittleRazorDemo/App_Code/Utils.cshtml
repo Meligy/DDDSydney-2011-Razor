@@ -1,0 +1,19 @@
+﻿@helper Hello(string name)
+{
+    <h3>Hello, @name!</h3>
+}
+
+
+
+
+@helper Price(decimal value)
+{
+    if(value == 0)
+    {
+        <strong>FREE</strong>
+    }
+    else
+    {
+        @: AUD$ @value
+    }
+}
